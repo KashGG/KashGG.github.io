@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome_Page</title>
+  <link rel="stylesheet" href="../Style/main/mainStyle.css">
+  <link rel="stylesheet" href="../Style/main/Button/button.css">
+  <link rel="stylesheet" href="../Style/main/text.css">
+</head>
+
+
+<body>
+  <div class="navbar">
+    <div class="container">
+      <a id="logo" class="logo" href="#">Private<span>Project</span></a>
+      <img id="Menu" class="Menu" src="../SVG/menu-icon.svg" width="20" height="15" alt="menu">
+
+      <nav>
+        <img id="Menu-Exit" class="Menu-Exit" src="../SVG/X.svg" alt="Menu-Exit">
+        <ul class="left-menu">
+          <li class="Home"><a href="index.html">Home</a></a></li>
+          <li><a href="../Html/Project.html">Porjects</a></a></li>
+          <li><a href="../Game/color/Play.html">Coming soon</a></a></li>
+        </ul>
+        <ul class="right-menu">
+          <li><a href="#">Contact</a></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <section calss="Hero">
+    <div class="Welcome">
+      <h1>
+        Welcome
+      </h1>
+    </div>
+
+    <div class="WelcomePng">
+      <img src="../img/1.PNG" alt="">
+    </div>
+
+    <div class="text">
+      <h1>I'm Hussein<br></br>
+        <div class="c1">
+          <div class="type">Web Developer</div>
+        </div>
+        </br>
+        <div class="c2">
+          <div class="type2">Web Designer</div>
+        </div>
+        </br>
+        <div class="c3">
+          <div class="type3">-----------------</div>
+        </div>
+        <br></br>
+      </h1>
+      </tex">
+      <!-- a buttons -->
+      <form action="/Html/Project.html">
+        <div class="buttons">
+          <button class="blob-btn">
+            Porjects
+            <span class="blob-btn__inner">
+              <span class="blob-btn__blobs">
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+              </span>
+            </span>
+          </button>
+          <br />
+
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo">
+                </feColorMatrix>
+                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+              </filter>
+            </defs>
+          </svg>
+      </form>
+      <!-- a buttons -->
+  </section>
+  <script>
+    const mobileBtn = document.getElementById('Menu')
+    nav = document.querySelector('nav')
+    mobileBtnExit = document.getElementById('Menu-Exit')
+
+    mobileBtn.addEventListener('click', () => {
+      nav.classList.add('menu_HIDDEN');
+    })
+
+    mobileBtnExit.addEventListener('click', () => {
+      nav.classList.remove('menu_HIDDEN');
+    })
+
+  </script>
+</body>
+
+</html>
+<!DOCTYPE html>
