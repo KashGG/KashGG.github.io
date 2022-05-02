@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 body {   
 
-    overflow: hidden;
+   
     
     //background: url(../../SVG/patternee.svg);
     font-family: 'Rubik';
@@ -121,6 +121,7 @@ nav{
     top: 0;
     background: rgb(255, 255, 255);
     padding: 3px;
+    position: absolute;
 
     
 
@@ -176,10 +177,11 @@ nav{
 
         display: flex;
         justify-content: space-between;
-        background: none;
+        background:none;
         height: auto;
         width: 80%;
         padding: 0;
+        position: absolute;
 
         .logo{
 
