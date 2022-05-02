@@ -1,0 +1,57 @@
+.text{
+    text-align: center;
+   }
+     .c1{
+       display: inline-block;
+     }
+     .c2{
+         display: inline-block;
+     }
+     .c3{
+   
+       display: inline-block;
+   
+     }
+     .c4{
+       display: inline-block;
+     }
+   
+   .type{
+       font-family: 'Play';
+   
+         font-size: 1.5rem;
+         overflow: hidden;
+         border-right: .15em solid orange;
+         white-space: nowrap; 
+         width: 0;
+         animation: 
+           typing 1s steps(25, end) forwards;
+     }
+     .type2{
+         font-size: 1.5rem;
+         overflow: hidden;
+         border-right: .15em solid orange;
+         white-space: nowrap; 
+         width: 0;
+         animation: 
+           typing 1s steps(25, end) forwards;
+         animation-delay: 1s;
+     }
+     .type3{
+       font-size: 1.5rem;
+         overflow: hidden;
+         border-right: .15em solid orange; 
+         white-space: nowrap; 
+         width: 0;
+         animation: 
+           typing 1s steps(25, end) forwards;
+         animation-delay: 2s;
+     }
+     @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      @keyframes blink {
+        from { border-color: transparent }
+        to { border-color: orange; }
+      }
