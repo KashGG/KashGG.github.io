@@ -6,21 +6,23 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Unity WebGL Player | coolor</title>
   <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
   <link rel="stylesheet" href="../../Style/main/mainStyle.css">
 </head>
 
 <body>
+
   <div class="navbar">
     <div class="container">
       <a id="logo" class="logo" href="#">Private<span>Project</span></a>
-      <img id="Menu" class="Menu" src="../SVG/menu-icon.svg" width="20" height="15" alt="menu">
+      <img id="Menu" class="Menu" src="willkommen/SVG/menu-icon.svg" width="20" height="15" alt="menu">
 
       <nav>
-        <img id="Menu-Exit" class="Menu-Exit" src="../SVG/X.svg" alt="Menu-Exit">
+        <img id="Menu-Exit" class="Menu-Exit" src="willkommen/SVG/X.svg" alt="Menu-Exit">
         <ul class="left-menu">
-          <li class="Home"><a href="/index.html">Home</a></a></li>
-          <li><a href="../../Projects/index.html">Projects</a></a></li>
-          <li><a href="../color/index.html">Coming soon</a></a></li>
+          <li class="Home"><a href="index.html">Home</a></a></li>
+          <li><a href="willkommen/Projects/index.html">Projects</a></a></li>
+          <li><a href="../willkommen/Game/color/index.html">Coming soon</a></a></li>
         </ul>
         <ul class="right-menu">
           <li><a href="#">Contact</a></a></li>
@@ -29,38 +31,23 @@
     </div>
   </div>
 
-  <div class="ply">
-    <div id=" unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" height=600></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
-        </div>
 
-      </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title"></div>
+  <div id="unity-container" class="unity-desktop">
+    <canvas id="unity-canvas" width=960 height=600></canvas>
+    <div id="unity-loading-bar">
+      <div id="unity-logo"></div>
+      <div id="unity-progress-bar-empty">
+        <div id="unity-progress-bar-full"></div>
       </div>
     </div>
-
+    <div id="unity-warning"> </div>
+    <div id="unity-footer">
+      <div id="unity-webgl-logo"></div>
+      <div id="unity-fullscreen-button"></div>
+      <div id="unity-build-title">coolor</div>
+    </div>
   </div>
   <script>
-
-    const mobileBtn = document.getElementById('Menu')
-    nav = document.querySelector('nav')
-    mobileBtnExit = document.getElementById('Menu-Exit')
-
-    mobileBtn.addEventListener('click', () => {
-      nav.classList.add('menu_HIDDEN');
-    })
-
-    mobileBtnExit.addEventListener('click', () => {
-      nav.classList.remove('menu_HIDDEN');
-    })
     var container = document.querySelector("#unity-container");
     var canvas = document.querySelector("#unity-canvas");
     var loadingBar = document.querySelector("#unity-loading-bar");
@@ -93,11 +80,11 @@
     }
 
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/color.loader.js";
+    var loaderUrl = buildUrl + "/test bild.loader.js";
     var config = {
-      dataUrl: buildUrl + "/color.data",
-      frameworkUrl: buildUrl + "/color.framework.js",
-      codeUrl: buildUrl + "/color.wasm",
+      dataUrl: buildUrl + "/test bild.data",
+      frameworkUrl: buildUrl + "/test bild.framework.js",
+      codeUrl: buildUrl + "/test bild.wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "coolor",
@@ -125,15 +112,15 @@
       // performance, uncomment the following line:
       // config.devicePixelRatio = 1;
 
-      canvas.style.width = window.SetFullscreen + 'px';
+      canvas.style.width = window.innerWidth + 'px';
       canvas.style.height = window.innerHeight + 'px';
 
       unityShowBanner('WebGL builds are not supported on mobile devices.');
     } else {
       // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-      canvas.style.width = "100%";
-      canvas.style.height = "700px";
+      canvas.style.width = "960px";
+      canvas.style.height = "600px";
     }
 
     loadingBar.style.display = "block";
