@@ -46,11 +46,6 @@
   width: 300px;
   background: rgba(0, 0, 0, 0.377);
 }
-.Box .Play .__text {
-  cursor: pointer;
-  padding: 140px 32px;
-  text-align: center;
-}
 .Box .Play:hover {
   transition: 0.5s ease;
   opacity: 1;
