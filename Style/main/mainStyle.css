@@ -208,6 +208,10 @@ nav li a:hover {
   .WelcomePng {
     right: 0;
   }
+
+  .Pn {
+    width: 700px;
+  }
 }
 .Welcome {
   display: flex;
