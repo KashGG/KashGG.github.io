@@ -48,11 +48,11 @@
   background: rgba(0, 0, 0, 0.377);
   transition: 0.5s ease;
 }
-.Box .Play:hover {
+.Box .Play:active {
   transition: 0.5s ease;
   opacity: 1;
 }
-.Box .Play:hover .ButtonPlay {
+.Box .Play:active .ButtonPlay {
   transition: 0.5s ease;
   margin-top: 120px;
 }/*# sourceMappingURL=Project.css.map */
