@@ -4,7 +4,7 @@
 
 .buttons {
   text-align: center;
-  border-radius: 30px;
+  margin-top: 10px;
 }
 
 .blob-btn {
@@ -23,6 +23,7 @@
   transition: color 0.5s;
   cursor: pointer;
   border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3647058824);
 }
 .blob-btn:before {
   content: "";

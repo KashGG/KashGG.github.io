@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 body {   
+    
 
+
+    -webkit-border-radius:25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
    
     
     //background: url(../../SVG/patternee.svg);
@@ -69,10 +74,10 @@ body {
 }
 
 .navbar {
-
     border-radius: 40px 0px 0px 40px;
-  background: white;
-  padding: 1em;
+    background: white;
+    padding: 1em;
+    box-shadow: 5px 5px 15px 5px #00000063;
 
     .logo {
      text-decoration: none;
@@ -99,9 +104,11 @@ body {
     .container {
       display: flex;
       place-content: space-between;
+
     }
 
     .Menu{
+
       cursor: pointer;
     }
 
@@ -112,29 +119,31 @@ nav.menu_HIDDEN{
 }
 
 nav{
-    border-radius: 20px 0px 0px 20px;
-    margin-top: 8px;
-    position: fixed;
+
+    border-radius: 20px 0px 20px 20px;
+    margin-top: 0px;
     z-index: 999;
-    width: 25%;
-    right: 0;
-    top: 0;
+    width: 90%;
     background: rgb(255, 255, 255);
     padding: 3px;
     position: absolute;
-
     
 
+    
+    
+    
      ul.left-menu{
         list-style-type: none;
         margin-top: auto;
         font-size: 70%;
-        justify-content: unset;
+        padding-left: 0;
+        
 
     }
     ul.right-menu{
         list-style-type: none;
         font-size: 70%;
+        padding-left: 0;
     }
     li{
 
@@ -161,21 +170,17 @@ nav{
 }
 
 @media only screen and (min-width: 750px) {
-
-
 .Menu, .Menu-Exit{
     display:none;
 }
 
     .navbar .container{
-
         display: grid;
         grid-template-columns: 180px auto;
         justify-content: unset;
     }
 
     .navbar nav{
-
         display: flex;
         justify-content: space-between;
         background:none;
@@ -183,6 +188,10 @@ nav{
         width: 80%;
         padding: 0;
         position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 10px;
+        
 
         .logo{
 
@@ -190,7 +199,6 @@ nav{
         }
 
         ul{
-
             display: flex;
         }
         a{
@@ -199,9 +207,10 @@ nav{
         }
 
         ul.left-menu{
-
+            
             margin: 16px;
             font-size: 1em;
+            padding-left: 10px;
         }
         ul.right-menu{
 
@@ -211,22 +220,32 @@ nav{
 
     }   
     
+    .WelcomePng{
+
+        right:0;
+    }
+
 }
 
 .Welcome{
+
     display: flex;
     justify-content: center;
     font-size: 200%;
     color: #FFFFFF;
     text-shadow: 0 0 10px #000000;
     color: #FFFFFF;
+
 }
 
 .WelcomePng{
-    display: flex;
-    justify-content: center;
+
+    display:flex; 
+    justify-content:center;
 }
 
 
 // Welcome------------------------------------------------------------------
+
+
 //---------------------------------------------------------------------------
