@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+html{
+
+    scroll-behavior: smooth;
+}
+
 body {   
     
-
+    
 
     -webkit-border-radius:25px;
     -moz-border-radius: 25px;
@@ -248,8 +253,42 @@ nav{
     justify-content:center;
 }
 
+// content------------------------------------------------------------------
 
-// Welcome------------------------------------------------------------------
 
+.contentd{
+
+.logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 2.2em;
+    margin: auto;  
+
+       span{
+         color: #1ab4d3;
+        }
+   }
+
+   .telegram{
+
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Rubik';
+   }
+
+   .discord{
+     margin-left: 10px;
+
+   }
+
+   .adis{
+    font-size: 20px;
+    font-family: 'Rubik';
+
+    }
+
+
+}
 
 //---------------------------------------------------------------------------

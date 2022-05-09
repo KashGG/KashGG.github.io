@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   border-radius: 25px;
   font-family: "Rubik";
@@ -227,4 +231,27 @@ nav li a:hover {
 .WelcomePng {
   display: flex;
   justify-content: center;
+}
+
+.contentd .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 2.2em;
+  margin: auto;
+}
+.contentd .logo span {
+  color: #1ab4d3;
+}
+.contentd .telegram {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: "Rubik";
+}
+.contentd .discord {
+  margin-left: 10px;
+}
+.contentd .adis {
+  font-size: 20px;
+  font-family: "Rubik";
 }/*# sourceMappingURL=mainStyle.css.map */
