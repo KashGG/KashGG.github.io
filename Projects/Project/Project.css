@@ -48,11 +48,28 @@
   background: rgba(0, 0, 0, 0.377);
   transition: 0.5s ease;
 }
-.Box .Play:focus {
-  transition: 0.5s ease;
+.Box .Play:hover {
   opacity: 1;
 }
-.Box .Play:focus .ButtonPlay {
+.Box .Play:hover .ButtonPlay {
   transition: 0.5s ease;
   margin-top: 120px;
+}
+
+.monile-forceOpacity {
+  opacity: 1;
+}
+
+@-webkit-keyframes mymove {
+  to {
+    transition: 0.5s ease;
+    margin-top: 120px;
+  }
+}
+
+@keyframes mymove {
+  to {
+    transition: 0.5s ease;
+    margin-top: 120px;
+  }
 }/*# sourceMappingURL=Project.css.map */
