@@ -4,8 +4,8 @@
   flex-wrap: wrap;
 }
 .Box #demo {
+  margin-left: 0px;
   margin-top: 5%;
-  margin-left: 40px;
   box-shadow: 0px 1px 59px 14px rgba(0, 0, 0, 0.52);
   -webkit-box-shadow: 0px 1px 59px 14px rgba(0, 0, 0, 0.52);
   -moz-box-shadow: 0px 1px 59px 14px rgba(0, 0, 0, 0.52);
@@ -17,59 +17,60 @@
   box-shadow: 0px 1px 30px 2px rgb(252, 252, 252);
   transition: 0.5s ease;
 }
+@media only screen and (min-width: 600px) {
+  .Box #demo {
+    margin-left: 40px;
+  }
+  .Box #demo .Play {
+    opacity: 0;
+    border-radius: 30px 30px 30px 30px;
+    height: 300px;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.377);
+    transition: 0.5s ease;
+  }
+  .Box #demo .Play:hover {
+    opacity: 1;
+  }
+  .Box #demo .Play:hover .ButtonPlay {
+    transition: 0.5s ease;
+    margin-top: 120px;
+    opacity: 1;
+  }
+  .Box #demo .mTest {
+    display: none;
+  }
+  .Box .ButtonPlay {
+    margin-top: 245px;
+    margin-left: 100px;
+    background-color: #44c767;
+    border-radius: 28px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+    transition: 0.5s ease;
+  }
+  .Box .ButtonPlay:hover {
+    background-color: #5cbf2a;
+  }
+  .Box .ButtonPlay:active {
+    position: relative;
+    top: 1px;
+  }
+}
 .Box .ButtonPlay {
-  margin-top: 245px;
-  margin-left: 100px;
-  background-color: #44c767;
-  border-radius: 28px;
-  border: 1px solid #18ab29;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 17px;
-  padding: 16px 31px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #2f6627;
-  transition: 0.5s ease;
-}
-.Box .ButtonPlay:hover {
-  background-color: #5cbf2a;
-}
-.Box .ButtonPlay:active {
-  position: relative;
-  top: 1px;
-}
-.Box .Play {
   opacity: 0;
-  border-radius: 30px 30px 30px 30px;
-  height: 300px;
-  width: 300px;
-  background: rgba(0, 0, 0, 0.377);
-  transition: 0.5s ease;
-}
-.Box .Play:hover {
-  opacity: 1;
-}
-.Box .Play:hover .ButtonPlay {
-  transition: 0.5s ease;
-  margin-top: 120px;
 }
 
-.monile-forceOpacity {
-  opacity: 1;
-}
-
-@-webkit-keyframes mymove {
-  to {
-    transition: 0.5s ease;
-    margin-top: 120px;
-  }
-}
-
-@keyframes mymove {
-  to {
-    transition: 0.5s ease;
-    margin-top: 120px;
-  }
+.mTest {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 230px;
 }/*# sourceMappingURL=Project.css.map */
