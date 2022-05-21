@@ -35,7 +35,7 @@
         @media only screen and (min-width: 600px) {
             #demo{
                 
-     
+
                 margin-left:40px;
                 .Play{
 
@@ -95,7 +95,9 @@
             }
           }
 
-        
+          .ButtonPlay{
+              opacity: 0;
+          }
     }
 
     .mTest{

@@ -64,6 +64,9 @@
     top: 1px;
   }
 }
+.Box .ButtonPlay {
+  opacity: 0;
+}
 
 .mTest {
   display: flex;
